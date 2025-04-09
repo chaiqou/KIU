@@ -1,0 +1,121 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #e9e9e9;
+}
+
+.game-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.game-title {
+  color: #1A1F2C;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.game-instructions {
+  color: #222222;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.feedback {
+  color: #b84c4c;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.guess-input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.validation-error {
+  color: #ea384c;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.stats {
+  text-align: right;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.game-button {
+  background-color: #ea384c;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.guess-history {
+  margin-top: 2rem;
+}
+
+.history-title {
+  color: #2e5931;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.history-list {
+  list-style-type: none;
+  text-align: left;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.history-item {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.history-item::before {
+  content: "•";
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.guess-number {
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.guess-result {
+  color: #222222;
+}

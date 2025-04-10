@@ -9,7 +9,81 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<div class="game-container">
+<div class="registration-container" id="registrationContainer">
+  <div class="form-content">
+    <h1 class="form-title">Group Form</h1>
+
+    <div class="form-row">
+      <div class="form-group half-width">
+        <label for="firstName">First name</label>
+        <input type="text" id="firstName" class="form-control" placeholder="First name">
+        <span class="error-message" id="firstNameError"></span>
+      </div>
+
+      <div class="form-group half-width">
+        <label for="lastName">Last name</label>
+        <input type="text" id="lastName" class="form-control" placeholder="Last name">
+        <span class="error-message" id="lastNameError"></span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" class="form-control" placeholder="you@company.com">
+      <span class="error-message" id="emailError"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" class="form-control" placeholder="Password">
+      <span class="error-message" id="passwordError"></span>
+    </div>
+
+    <div class="form-group team-size-container">
+      <label for="teamSize">Team size</label>
+      <select id="teamSize" class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Technologies</label>
+      <div class="checkbox-group">
+        <div class="checkbox-item">
+          <input type="checkbox" id="html" name="technology" value="HTML">
+          <label for="html">HTML</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="css" name="technology" value="CSS">
+          <label for="css">CSS</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="javascript" name="technology" value="JavaScript">
+          <label for="javascript">JavaScript</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="reactjs" name="technology" value="ReactJS">
+          <label for="reactjs">ReactJS</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="figma" name="technology" value="Figma">
+          <label for="figma">Figma</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="github" name="technology" value="GitHub">
+          <label for="github">GitHub</label>
+        </div>
+      </div>
+      <span class="error-message" id="technologiesError"></span>
+    </div>
+
+    <button type="button" id="submitBtn" class="submit-btn">Submit</button>
+  </div>
+</div>
+
+<div class="game-container" id="gameContainer">
   <h1 class="game-title">Guess the Number</h1>
   <p class="game-instructions">I'm thinking of a number between 1 and 100</p>
   <div class="feedback" id="feedback">?</div>

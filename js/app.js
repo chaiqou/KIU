@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const registrationContainer = document.getElementById('registrationContainer'); // Gets the element with id="registrationContainer"
-  const gameContainer = document.getElementById('gameContainer'); // Tries to get element with id="gameContainer"
+  const registrationContainer = document.getElementById('registrationContainer');
+  const gameContainer = document.getElementById('gameContainer');
   const submitBtn = document.getElementById('submitBtn');
 
 
@@ -143,19 +143,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (userGuess === randomNumber) {
       feedback = 'Correct!';
-      resultText = 'Correct!';
+      resultText = '&nbsp;&nbsp;(Correct)';
       icon = '🎉';
       gameEnded = true;
       guessInput.disabled = true;
       checkButton.disabled = true;
     } else if (userGuess < randomNumber) {
       feedback = 'Too low!';
-      resultText = 'Too low';
+      resultText = '&nbsp;&nbsp;(Too low)';
       icon = '📈';
       score -= 1;
     } else {
       feedback = 'Too high!';
-      resultText = 'Too high';
+      resultText = '&nbsp;&nbsp;(Too high)';
       icon = '📉';
       score -= 1;
     }
